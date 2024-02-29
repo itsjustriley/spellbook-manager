@@ -24,8 +24,6 @@ const spellSlice = createSlice({
         state.known.push(spellID);
         if (level === 0) {
           state.prepared.push(spellID);
-          console.log("level 0 spell prepared:");
-          console.log(state.prepared);
         }
       }
     },
