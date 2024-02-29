@@ -57,7 +57,7 @@ export default function SpellCard({spell}) {
           )}
       </div>
       <div className="flex justify-between">
-        <LearnPrepare spellName={name}/>
+        <LearnPrepare spellName={name} spellLevel={level}/>
       </div>
     </li>
   );

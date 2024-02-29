@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleKnown, togglePrepared } from '../../spellSlice';
 
-function LearnPrepare({spellName}) {
+function LearnPrepare({spellName, spellLevel}) {
   const dispatch = useDispatch();
   const known = useSelector(state => state.spell.known);
   const prepared = useSelector(state => state.spell.prepared);
@@ -10,7 +10,7 @@ function LearnPrepare({spellName}) {
 
   return (
     <div className="flex justify-between"> 
-      <button onClick={() => dispatch(toggleKnown(spellName))} 
+      <button onClick={() => dispatch(toggleKnown({spellID: spellName, level: spellLevel}))} 
       className={`mr-4 prepare-button hover:bg-dark-purple hover:text-green ${isKnown ? 'text-medium-purple' : 'text-brown'}`}>
         {isKnown ? "Known" : "Learn"}
       </button>
