@@ -8,7 +8,7 @@ const Prepared = () => {
   const preparedSpells = useSelector(state => state.spell.prepared);
   const preparedSpellList = spellList.filter(spell => preparedSpells.includes(spell.name));
   const knownSpells = useSelector(state => state.spell.known);
-
+  
   return (
     <div>
       <h2 className="text-xl text-purple font-bold mb-4">Prepared Spells</h2>
