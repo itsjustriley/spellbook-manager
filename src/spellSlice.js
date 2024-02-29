@@ -14,13 +14,19 @@ const spellSlice = createSlice({
   initialState: { known: [], prepared: [] },
   reducers: {
     toggleKnown: (state, action) => {
-      if (state.known.includes(action.payload)) {
-        state.known = state.known.filter(spellId => spellId !== action.payload);
-        if (state.prepared.includes(action.payload)) {
-          state.prepared = state.prepared.filter(spellId => spellId !== action.payload);
+      const { spellID, level } = action.payload;
+      if (state.known.includes(spellID)) {
+        state.known = state.known.filter(spellNames => spellNames !== spellID);
+        if (state.prepared.includes(spellID)) {
+          state.prepared = state.prepared.filter(spellNames => spellNames !== spellID);
         }
       } else {
-        state.known.push(action.payload);
+        state.known.push(spellID);
+        if (level === 0) {
+          state.prepared.push(spellID);
+          console.log("level 0 spell prepared:");
+          console.log(state.prepared);
+        }
       }
     },
     togglePrepared: (state, action) => {
