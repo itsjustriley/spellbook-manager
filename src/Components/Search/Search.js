@@ -18,7 +18,7 @@ function Search() {
 
   return (
     <div className="SpellSearch">
-      <h2>Spell Search</h2>
+      <h2 className="text-xl text-purple font-bold mb-4">Spell Search</h2>
       <div className="flex 	justify-evenly mt-4 mb-4">
         <div className="Search flex">
           <label className="mr-4" htmlFor="search">Search: </label>
