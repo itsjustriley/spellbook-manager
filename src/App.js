@@ -4,7 +4,7 @@ import Footer from './Components/Footer/Footer';
 import Search from './Components/Search/Search';
 import Known from './Components/Known/Known';
 import Prepared from './Components/Prepared/Prepared';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
