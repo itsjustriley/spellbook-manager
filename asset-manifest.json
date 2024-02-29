@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/spellbook-manager/static/css/main.41201082.css",
-    "main.js": "/spellbook-manager/static/js/main.16dcd463.js",
+    "main.js": "/spellbook-manager/static/js/main.b4c80e1a.js",
     "static/js/453.81bcd366.chunk.js": "/spellbook-manager/static/js/453.81bcd366.chunk.js",
     "index.html": "/spellbook-manager/index.html",
     "main.41201082.css.map": "/spellbook-manager/static/css/main.41201082.css.map",
-    "main.16dcd463.js.map": "/spellbook-manager/static/js/main.16dcd463.js.map",
+    "main.b4c80e1a.js.map": "/spellbook-manager/static/js/main.b4c80e1a.js.map",
     "453.81bcd366.chunk.js.map": "/spellbook-manager/static/js/453.81bcd366.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.41201082.css",
-    "static/js/main.16dcd463.js"
+    "static/js/main.b4c80e1a.js"
   ]
 }
