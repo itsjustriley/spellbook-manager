@@ -14,8 +14,8 @@ const Prepared = () => {
       <h2 className="text-xl text-purple font-bold mb-4">Prepared Spells</h2>
       {preparedSpellList.length === 0 && <p className="text-grey-purple italic">No Spells Prepared</p>}
       {knownSpells.length === 0 ? 
-        <button className="bg-purple hover:bg-light-purple text-white font-bold py-2 px-4 rounded mb-4" onClick={() => window.location.href = "/search"}>Learn Spells</button> :
-        <button className="bg-purple hover:bg-light-purple text-white font-bold py-1 px-4 rounded mb-4" onClick={() => window.location.href = "/known"}>View Known Spells</button>
+        <button className="bg-purple hover:bg-light-purple text-white font-bold py-2 px-4 rounded mb-4" onClick={() => window.location.href = "#search"}>Learn Spells</button> :
+        <button className="bg-purple hover:bg-light-purple text-white font-bold py-1 px-4 rounded mb-4" onClick={() => window.location.href = "#known"}>View Known Spells</button>
         }
       <ul>
         {preparedSpellList.map(spell => (
